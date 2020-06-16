@@ -1,0 +1,48 @@
+path = r'C:\Temp\test.csv' # 앞에 r붙이먄 \ 기능X (Raw String)
+print(path)
+
+
+#### join
+
+arr1 = ','.join(['하나','둘','셋'])  # 하나, 둘, 셋
+print(arr1)
+
+arr2 = ''.join(['하나','둘','셋'])  # 하나둘셋 
+print(arr2)
+
+
+#### split 
+
+arr3 = '192.135.20.45'.split('.')
+print(arr3) #['192', '135', '20', '45']
+print(arr3[0]) #192
+
+
+#### partition
+
+arr4 = "http://www.naver.com" # ('http', '://', 'www.naver.com')
+
+print(arr4.partition("://"))
+
+
+departure, _, arrival = "Seattle-Seoul".partition('-')
+print(departure) # 출력 : Seattle
+print(_) # 출력 : -
+print(arrival) # 출력 : Seoul
+
+
+#### format
+
+# 위치를 기준으로 한 포맷팅
+s = "Age: {1}, Name: {0}".format("강정수", 30)
+print(s)  #출력: Age: 30, Name: 강정수
+ 
+# 필드명을 기준으로 한 포맷팅
+s = "Name: {name}, Age: {age}".format(name="강정수", age=30)
+print(s) #출력: Name: 강정수, Age: 30
+ 
+# object의 인덱스 혹은 키를 사용하여 포맷팅
+area = (10, 20)
+s = "width: {x[0]}, height: {x[1]}".format(x = area)
+print(s) #출력: width: 10, height: 20
+
