@@ -1,0 +1,28 @@
+x=True
+y=False
+
+if x and y :
+    print("x and y는 TRUE 이다")
+else:
+    print("x and y는 FALSE 이다")
+
+
+
+if x or y :
+    print("x or y는 TRUE 이다")
+else:
+    print("x or y는 FALSE 이다")
+
+
+
+if not x  :
+    print("not x는 TRUE 이다")
+else:
+    print("not x는 FALSE 이다")
+
+
+
+if not y  :
+    print("not y는 TRUE 이다")
+else:
+    print("not y는 FALSE 이다")
