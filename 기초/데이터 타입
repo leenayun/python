@@ -1,0 +1,11 @@
+print(int(3.5))
+print(2e3)
+print(float(3.444))
+print(float("inf"))
+
+print(bool(0))       # False. 숫자에서 0만 False임,
+print(bool(-1))      # True
+print(bool("False")) # True -> 0제외 한 건 다 !
+
+a = None      # a는 None
+print(a is None)     # a가 None 이므로 True
