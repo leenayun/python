@@ -1,0 +1,9 @@
+# 파이썬에는 switch문이 없어서 if elif else 사용 
+
+x = 10
+if x < 10:
+    print("한자리수")
+elif x < 100:
+    print("두자리수")
+else:
+    print("세자리 이상")
