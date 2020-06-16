@@ -1,0 +1,23 @@
+
+### while
+
+i=1
+
+while i <= 10:
+    print(i)
+    i += 1
+
+
+### for
+
+#range(stop)
+#range(start,stop)
+#range(start,stop,step)
+
+for i in range(11):
+    print(i) # 0~10 > 11개
+
+# list
+list = ["This", "is", "a", "book"]
+for s in list:
+    print(s)
