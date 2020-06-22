@@ -1,0 +1,54 @@
+a=[] # 빈리스트 - 동적배열로 자유롭게 확장할 수 있는 구조 ! 대 박!
+
+a=["AB",10,False] 
+
+
+
+# 인덱싱
+
+
+x = a[1]
+a[1] = "Test"
+
+print("x::",x)
+print("a[1]::",a[1])
+      
+
+#slice
+
+b = [1,2,3,7,8,9]
+
+c = b[0:3]
+print("b[0:3]::",c) # 1 2 3  //  인덱스 0 ~ 인덱스 3 전에까지
+c = b[:3] 
+print("b[:3]::",c) # 1 2 3 // 처음부터 ~ 인덱스 3 전까지 
+c = b[3:]
+print("b[3:]::",c) # 7 8 9 // 인덱스 3 이후부터 ~ 끝까지
+
+
+# 리스트 요소 추가, 수정, 삭제
+
+a.append(21.5) # 추가
+a[1] = 21 # 수정
+del a[0] # 삭제
+
+print(a)
+
+
+
+# 리스트 복제
+
+arr1=[1,2]
+arr2 = arr1 * 5
+print(arr2)
+
+
+#리스트 검색
+
+mylist = "My Name is Lee Nayun"
+index = mylist.index("Nayun")
+count = mylist.count('a')
+
+print("index ::" ,index)
+print("a count ::" ,count)
+
