@@ -1,0 +1,43 @@
+
+
+
+# Dictionary는 키 - 값 형태
+# Map이라고도 불리고 키로 값을 찾아내는 해시테이블 구조를 갖음
+
+# 키는 값 변경 불가 (키로 문자열이나 튜플은 사용가능, 리스트는 X - 변경할 수 있으니까 )
+
+
+scores = {"철수":90 ,"민수":85,"영희":80}
+
+
+print("scores[""민수""]:",scores["민수"])
+
+scores["민수"] = 88
+
+print("scores[""민수""]:",scores["민수"])
+
+
+# 1. Tuple List로부터 dict 생성
+persons = [('김기수', 30), ('홍대길', 35), ('강찬수', 25)]
+mydict = dict(persons)
+ 
+age = mydict["홍대길"]
+print(age)   # 35
+ 
+# 2. Key=Value 파라미터로부터 dict 생성
+scores = dict(a=80, b=90, c=85)
+print(scores['b'])  #90
+
+
+# 값 출력
+
+for key in scores:
+    val = scores[key]
+    print("%s : %d" % (key, val))
+
+    
+ 
+# keys
+keys = scores.keys()
+for k in keys:
+    print(k)
