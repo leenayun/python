@@ -1,0 +1,60 @@
+class MyClass:
+    pass # 빈 동적 , 아직 구현되지 않았음
+
+
+class Rectangle:
+    count = 0  # 클래스 변수
+ 
+    # 초기자(initializer)
+    # 클래스로부터 새 객체를 생성할 때마다 실행되는 특별한 메서드
+
+    
+    def __init__(self, width, height):
+        # self.* : 인스턴스변수
+        self.width = width
+        self.height = height
+        Rectangle.count += 1
+ 
+    # 메서드
+    def calcArea(self):
+        area = self.width * self.height
+        return area
+
+    # private 메서드
+    def __internalRun(self):
+        pass
+
+###   특정 변수명이나 메서드를 private으로 만들어야 한다면
+###   두개의 밑줄(__)을 이름 앞에 붙이면 된다.
+
+
+
+# 클래스 상속 , 다형성
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    def move(self):
+        print("move")
+    def speak(self):
+        pass
+
+class Dog (Animal):
+    def speak(self):
+        print("bark")
+ 
+class Duck (Animal):
+    def speak(self):
+        print("quack")
+
+
+dog = Dog("doggy") # 부모클래스의 생성자
+n = dog.name # 부모클래스의 인스턴스변수
+dog.move()   # 부모클래스의 메서드
+dog.speak()  # 파생클래스의 멤버
+
+
+
+        
+
+ 
