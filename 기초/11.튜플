@@ -1,0 +1,44 @@
+
+# 튜플(tuple)은 리스트와 달리 새로운 요소를 추가하거나 갱신, 삭제하는 일 불가
+
+t = ("AB",10,False)
+print("t = ", t)
+
+
+t1=(123)  # int로 취급
+t2=(123,) # tuple이라고 취급 (콤마표시)
+
+
+t3 = (1,5,10)
+
+# 인덱스
+second = t3[1] # 5
+last = t3[-1] # 10 마지막 인덱스
+
+print ("second : ",second)
+print ("last : ",last)
+
+# 슬라이스
+
+s = t3[1:2]
+print("t[1:2] :",s) # 1 ~ 인덱스 2 전까지
+
+s = t3[1:]
+print("t[1:] :",s) # 인덱스 1 (포함) 이후  
+
+
+# 병합
+a = (1,2)
+b = (3, 4, 5)
+c = a+b
+
+print(c)
+
+# 반복
+d = a*3
+print(d)
+
+# 변수 할당
+
+firstname, lastname = ("john", "Kim")
+print(lastname,",",firstname)
