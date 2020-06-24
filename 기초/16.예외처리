@@ -1,0 +1,44 @@
+"""
+try:
+  문장1
+  문장2
+except:
+  예외처리
+finally:
+  마지막에 항상 수행
+
+"""
+
+def calc(values):
+    sum = None
+    # try...except...else
+    try:
+       sum = values[0] + values[1] + values[2]
+    except IndexError as err:
+        print('인덱스에러')
+    except Exception as err:
+        print(str(err))
+"""
+    except (IndexError, ValueError):
+        print('오류발생') # 이렇게 묶어서 처리가능
+
+    except FileExistsError: # 에러 무시할 때 
+        pass
+
+"""     
+    else:
+        print('에러없음')
+    finally:
+        print(sum)
+
+
+"""
+# raise 를 사용한 예 : 개발자가 에러를 던질때 사용 
+if total < 0:
+    raise Exception('Total Error')
+
+"""
+
+# 테스트
+calc([1, 2, 3, 6]) # 출력: 에러없음 6
+calc([1, 2])       # 출력: 인덱스에러 None
